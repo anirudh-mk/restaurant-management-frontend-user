@@ -1,0 +1,48 @@
+.topContainer {
+
+    padding: 10px 16px;
+}
+
+.header {
+    background-color: white;
+    padding: 16px;
+}
+
+.header>input {
+    width: calc(100% - 16px);
+    border: 0px;
+    padding: 0px;
+    outline: none;
+    padding: 8px 0px;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    padding-left: 16px;
+    margin-bottom: 10px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 32px);
+}
+
+.horizontalScroll {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+
+}
+
+.horizontalScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}

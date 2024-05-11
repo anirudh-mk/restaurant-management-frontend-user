@@ -20,13 +20,16 @@
 
 .ingredientsContainer {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
 }
 
 .ingredients {
     padding: 8px 20px;
-    background-color: aqua;
+    background-color: rgb(237, 237, 237);
     border-radius: 10px;
-    width: min-content;
+    /* width: min-content; */
     display: flex;
     align-items: center;
     margin: 8px;
@@ -41,4 +44,10 @@
 
 .horizontalScroll::-webkit-scrollbar {
     display: none;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }

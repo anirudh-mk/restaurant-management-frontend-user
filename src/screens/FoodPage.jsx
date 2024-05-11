@@ -1,7 +1,8 @@
 import React from 'react'
 import style from '../styles/foodPage.module.css'
-import MenuCard from '../components/MenuCard'
 import ImageCard from '../components/ImageCard'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDollarSign, faDotCircle, faStar } from '@fortawesome/free-solid-svg-icons'
 
 function FoodPage() {
 
@@ -66,12 +67,21 @@ function FoodPage() {
             <div className={style.content}>
                 <div className={style.headdingContainer}>
                     <div>
-                        <h2>Food Name</h2>
-                        <p>hekki</p>
+                        <h2>Biriyani</h2>
+                        <div className={style.icons}>
+                            <FontAwesomeIcon icon={faDotCircle} />
+                            <p>Veg</p>
+                        </div>
                     </div>
                     <div>
-                        <p>rating</p>
-                        <p>price</p>
+                        <div className={style.icons}>
+                            <FontAwesomeIcon icon={faStar} color='#ffb701' />
+                            <p>4.3</p>
+                        </div>
+                        <div className={style.icons}>
+                            <FontAwesomeIcon icon={faDollarSign} size='md' />
+                            <p>210</p>
+                        </div>
                     </div>
                 </div>
                 <p className={style.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque vitae quos totam atque maxime velit architecto, quae magnam, mollitia odit deserunt esse, facilis minima enim. Aut sit voluptas consectetur? Molestiae.</p>
